@@ -1,0 +1,174 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(44, 41, 38);
+  margin: 0;
+}
+#main-header {
+  height: 5rem;
+  background-color: rgb(29, 26, 24);
+  display: flex;
+  color: rgb(230, 157, 63);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(238, 164, 80);
+  text-transform: uppercase;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+#main-header nav a {
+  color: rgb(185, 131, 31);
+  font-size: 1.25rem;
+}
+
+#main-header nav a:hover {
+  color: rgb(228, 163, 44);
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+aside {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+aside:target {
+  display: block;
+}
+
+#side-drawer header {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: rgb(253, 239, 213);
+  font-size: 2rem;
+}
+
+main {
+  text-align: center;
+}
+
+main h1 {
+  font-size: 3rem;
+  color: rgb(238, 164, 80);
+}
+
+main section {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.food-items {
+  background-color: rgb(228, 206, 182);
+  border-radius: 6px;
+  overflow: hidden;
+
+  /* font-size: 2em; */
+}
+
+main ul li div {
+  padding: 1rem;
+}
+
+h2 {
+  /* font-size: 100%; */
+  /* font-size: 2em; */
+  font-size: 2 rem;
+}
+.food-items img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+.food-items a {
+  background-color: rgb(228, 157, 44);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+}
+
+.food-items a:hover {
+  background-color: rgb(221, 134, 34);
+}
+
+.food-items h2 {
+  margin: 0 0 1rem 0;
+}
+
+@media (max-width: 48rem) {
+  main ul {
+    grid-template-columns: 100%;
+  }
+  .menu-btn {
+    display: flex;
+  }
+  main h1 {
+    font-size: 1.5rem;
+  }
+  nav {
+    display: none;
+  }
+}
